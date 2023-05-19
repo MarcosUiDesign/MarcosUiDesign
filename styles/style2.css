@@ -1,0 +1,763 @@
+/*100 italic, regular 400, SemiBold 600, Bold 700*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: initial;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url(./assets/fonts/PPNeue_Montreal/OTF/PPNeueMontreal-Bold.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PPNeueMontreal-Bold';
+}
+
+/* --- CONTAINER ---*/
+.my_container {
+    display: flex;
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+}
+
+/* --- NAV --- */
+nav ul li a,
+nav ul li i {
+    color: var(--color-6);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--color-6);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-6);
+}
+
+/* --- SECTION START ---*/
+.start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 228px;
+}
+
+.start h1,
+.start h2 {
+    color: var(--color-1);
+}
+
+.start h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.start h2 {
+    font-size: 40;
+    line-height: 48px;
+}
+
+.start p {
+    color: var(--color-4);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.start img {
+    width: 920px;
+    height: auto;
+    margin-left: 20%;
+    position: relative;
+    bottom: 100px;
+}
+
+/* SECTION ABOUNT */
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about h3 {
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-1);
+}
+
+.about h3::before {
+    content: "";
+    display: block;
+    border-top: 10px solid var(--color-1);
+    width: 79px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.about p {
+    width: 712px;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 34px;
+    margin-bottom: 70px;
+}
+
+.about img {
+    width: 820px;
+    height: auto;
+    margin-left: 20%;
+    position: relative;
+    right: 120px;
+    bottom: 233px;
+}
+
+/* SECTION JOBS */
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding-top: 226px;
+}
+
+.jobs h3 {
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-1);
+}
+
+.jobs h3::before {
+    content: "";
+    display: block;
+    width: 79px;
+    border-top: 10px solid var(--color-1);
+    border-radius: 18px;
+    margin-bottom: 24px;
+    margin-left: 48%;
+}
+
+.jobs p {
+    width: 930px;
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--color-4);
+    padding-top: 48px;
+    margin: auto;
+}
+
+.jobs a {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.img_projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.img_projects img {
+    width: 770px;
+    height: auto;
+}
+
+/* --- SKILLS --- */
+#skills {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 345px;
+}
+
+.skills {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-1);
+}
+
+#skills img {
+    width: 122px;
+    height: 122px;
+    margin: 5%;
+}
+
+/* --- CALL ---  */
+.call {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.call h3 {
+    font-size: 64px;
+    line-height: 76px;
+    color: var(--color-1);
+}
+
+.call p {
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--color-1);
+}
+
+.call a {
+    margin-top: 95px;
+}
+
+#img_call_x {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 70%;
+    right: 50%;
+}
+
+#img_call_square {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 70%;
+    left: 45%;
+    transform: rotate(90deg);
+}
+
+#img_call_triangle {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 12%;
+    right: 25%;
+    transform: rotate(10deg);
+}
+
+#img_call_c {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 8%;
+    left: 25%;
+}
+
+/* --- FOOTER ---  */
+footer {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 536px;
+    border-top: 2px solid var(--color-line);
+    display: flex;
+    flex-direction: row;
+}
+
+footer #contact {
+    width: 256px;
+    height: 256px;
+    margin-top: 120px;
+    margin-left: 180px;
+}
+
+footer a i {
+    padding-top: 8px;
+}
+
+footer #contact h4,
+footer #media h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-5);
+}
+
+footer #contact p {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-5);
+}
+
+footer #media {
+    width: 450px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: 126px;
+}
+
+/* --- ICONS  --- */
+.my_icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 28px;
+    padding-top: 1.4%;
+}
+
+.my_icon:hover {
+    color: var(--color-1);
+}
+
+/* --- BUTTONS  --- */
+.my_btn {
+    width: 285px;
+    height: 66px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-6);
+    background-color: var(--color-1);
+    margin-top: 50px;
+    border-radius: 16px;
+    padding: 18px 90px 18px 90px;
+}
+
+.my_btn:hover {
+    color: var(--color-6);
+}
+
+/*--- VARIÁVEIS ---*/
+:root {
+    --color-1: #FD1874;
+    --color-2: #9A39FF;
+    --color-3: #2E005E;
+    --color-4: #212330;
+    --color-5: #212330;
+    --color-6: #FAFAFA;
+    --color-line: #21233054;
+}
+
+/* TELAS MENORES */
+
+/* --- TELAS --- */
+@media (max-width: 1366px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 60%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    /* --- START --- */
+
+    .start{
+        width: 100%;
+    }
+
+    .start h1 {
+        font-size: 65px;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    .start h2 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    .start p {
+        width: 510px;
+        color: var(--color-4);
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .start img {
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        bottom: 100px;
+        margin: 0;
+        left: 10%;
+    }
+
+    /* --- ABOUNT --- */
+    .about h3 {
+        font-size: 45px;
+        line-height: 40px;
+        color: var(--color-1);
+    }
+
+    .about h3::before {
+        border-top: 8px solid var(--color-1);
+        width: 69px;
+        margin-bottom: 24px;
+    }
+
+    .about p {
+        width: 520px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .about img {
+        max-width: 530px;
+        height: auto;
+        position: relative;
+        right: 70px;
+        bottom: 200px;
+    }
+
+    /* --- JOBS --- */
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+        padding-top: 226px;
+    }
+
+    .jobs h3 {
+        font-size: 45px;
+        line-height: 40px;
+        color: var(--color-1);
+    }
+
+    .jobs h3::before {
+        border-top: 8px solid var(--color-1);
+        width: 69px;
+        margin-bottom: 24px;
+    }
+
+    .jobs p {
+        width: 720px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .img_projects img {
+        max-width: 570px;
+    }
+
+    /* --- SKILLS --- */
+    .skills {
+        width: 100%;
+        height: 440px;
+    }
+
+    .skills img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* --- CALL --- */
+    .call h3 {
+        font-size: 44px;
+        line-height: 56px;
+    }
+
+    .call p {
+        font-size: 24px;
+        line-height: 23px;
+    }
+
+    /* --- ICON && BUTTON ---*/
+    .my_icon {
+        width: 40px;
+        height: 40px;
+        padding: 0.5%;
+    }
+
+    .my_btn {
+        width: 245px;
+        height: 60px;
+        font-size: 14px;
+        padding: 18px 60px 18px 60px;
+    }
+}
+
+/* --- MOBILE --- */
+@media(max-width: 393px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    /* --- Bootstrap ---*/
+    .custom-toggler {
+        border: none;
+    }
+
+    /* --- start --- */
+    .start {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    .start h2 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: var(--color-6);
+    }
+
+    .start h1 {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        color: var(--color-6);
+    }
+
+    .start p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--color-6);
+        width: 100%;
+    }
+
+    .start .my_icon {
+        width: 50px;
+        height: 50px;
+        padding-top: 3%;
+        border: 2px solid var(--color-6);
+        color: var(--color-6);
+    }
+
+    .start .my_btn {
+        background-color: var(--color-6);
+        color: var(--color-1);
+        font-size: 16px;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+        z-index: 1;
+        position: relative;
+        top: 285px;
+    }
+
+    .start img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: initial;
+        margin-bottom: 255px;
+    }
+
+    /* --- about --- */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        position: static;
+    }
+
+    .about h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10%;
+    }
+
+    .about h3::before {
+        width: 45px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        margin-left: 28%;
+        border-top: 5px solid var(--color-1);
+    }
+
+    .about p {
+        font-size: 18px;
+        line-height: 24px;
+        width: 98%;
+        margin: 0;
+    }
+
+    .about img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: initial;
+        margin-bottom: 80%;
+    }
+
+    .about .my_btn {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 190%;
+        left: 0%;
+        right: 0%;
+    }
+
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 180px;
+    }
+
+    .jobs h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        line-height: 40px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .jobs h3::before {
+        width: 33px;
+        border-top: 5px solid var(--color-1);
+        border-radius: 18px;
+        margin-bottom: 15px;
+        margin-left: 45%;
+    }
+
+    .jobs p {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .jobs img {
+        width: 100%;
+    }
+
+    .jobs .img_projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jobs .my_btn {
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        background-color: transparent;
+        color: var(--color-1);
+        border: 2px solid var(--color-1);
+        padding-top: 4%;
+    }
+
+    /* --- skills --- */
+    #skills {
+        margin-top: 28%;
+        margin-top: 0;
+        height: 30%;
+        padding-top: 50%;
+    }
+
+    #skills img {
+        width: 10%;
+        height: auto;
+    }
+
+    /* --- msg --- */
+
+    .my_container h3 {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .my_container p {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .my_container .call img {
+        width: 10px;
+        height: 10%;
+    }
+
+    .my_container .my_btn {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    #img_call_x {
+        height: 28px;
+        width: 28px;
+        position: relative;
+        bottom: 45%;
+    }
+
+    #img_call_square {
+        height: 28px;
+        width: 28px;
+        position: relative;
+        bottom: 48.5%;
+    }
+
+    #img_call_triangle {
+        height: 28px;
+        width: 28px;
+        position: relative;
+        right: 48%;
+        top: 0%;
+    }
+
+    #img_call_c {
+        height: 28px;
+        width: 28px;
+        position: relative;
+        left: 45%;
+        top: 0%;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        height: 40%;
+        padding: 5%;
+    }
+
+    footer #contact {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .my_icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    footer #contact h4, footer #media h4, footer #contact p {
+        font-size: 16px;
+        font-weight: 19px;
+    }
+
+    footer #media {
+        margin: 0;
+        padding: 0;
+    }
+}

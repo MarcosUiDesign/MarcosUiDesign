@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Light';
+    src: url("../assets/fonts/font2/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Regular';
+    src: url("../assets/fonts/font2/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url("../assets/fonts/font2/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url("../assets/fonts/font2/NeueMontreal-Bold.otf");
+}
+
+/* ESTILIZAÇÃO DO MENU (MOBILE E WEB) */
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu_control_mobile {
+    padding-top: 1.906rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+
+.meu_list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 31rem;
+    list-style: none;
+}
+
+.meu_list ul li a,
+.meu_list ul li i {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* MOBILE MENU */
+.btn_mobile {
+    display: none;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.btn_mobile button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+/* TELAS MÉDIANAS E GRANDES */
+
+@media screen and (min-width: 769px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 65%;
+        /*75.886rem 135rem; */
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    #menu_control_mobile {
+        align-items: center;
+    }
+
+    .meu_list ul {
+        width: 23rem;
+    }
+
+    .meu_list ul li a,
+    .meu_list ul li i {
+        font-family: 'PPNeueMontreal-Regular';
+    }
+
+    .meu_list ul li a:hover {
+        border-bottom: 2px solid var(--color-white);
+    }
+
+}
+
+/* TELAS PEQUENAS */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu_mobile {
+        height: 100vh;
+    }
+
+    #menu_control_mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1.875rem;
+    }
+
+    .menu_mobile .menu_ul {
+        margin-top: 1.875rem;
+        margin-bottom: 7.813rem;
+        list-style: none;
+    }
+
+    .menu_mobile .menu_ul li {
+        margin-top: 3.25rem;
+    }
+
+    .menu_mobile .menu_ul li a {
+        text-decoration: none;
+        color: var(--color-margenta);
+        font-size: 1.125rem;
+        font-family: 'PPNeueMontreal-Regular';
+    }
+
+    .menu_mobile .menu_ul li i {
+        margin-right: 1.614rem;
+        color: var(--color-margenta);
+    }
+
+    .menu_mobile hr {
+        border-color: var(--color-blue1);
+        opacity: 0.2;
+    }
+
+    .meu_list {
+        display: none;
+    }
+
+    .btn_mobile {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .btn_enabled {
+        color: var(--color-margenta);
+    }
+
+    .btn_disabled {
+        color: var(--color-white);
+    }
+}
+
+@media screen and (max-width: 393px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 24.563rem 55.5rem;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 1470px) {
+    body {
+        background-image: url("#");
+        background-size: 0%;
+    }
+
+    .meu_list ul li a,
+    .meu_list ul li i {
+        text-decoration: none;
+        color: var(--color-margenta);
+    }
+
+    .meu_list ul li a:hover {
+        border-bottom: 2px solid var(--color-margenta);
+    }
+}
+
+/* ########################################## */
+:root {
+    --color-white: #FAFAFA;
+    --color-margenta: #FD1874;
+    --color-blue1: #212330;
+}

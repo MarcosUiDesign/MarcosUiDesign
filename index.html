@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Carlos</title>
+    <link rel="icon" type="image/png" href="./assets/icons/design.png">
+
+    <!-- biblioteca de icones (font-awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-****" crossorigin="anonymous" />
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Viga&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/body_mobile.css">
+
+</head>
+
+<body id="body">
+    <nav class="container">
+        <div class="menu">
+            <div id="menu_control_mobile">
+                <div class="logo">
+                    <a class="" href="#"><img id="logo" src="./assets/icons/logo.svg" alt="logo"></a>
+                </div>
+
+                <div class="meu_list">
+                    <ul>
+                        <li class="">
+                            <a href="#start">início</a>
+                        </li>
+                        <li class="">
+                            <a href="#about">Sobre</a>
+                        </li>
+                        <li class="">
+                            <a href="#jobs">Trabalhos</a>
+                        </li>
+                        <li class="">
+                            <a href="#skills">Habilidades</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- botão ativo no mobile -->
+                <div class="btn_mobile">
+                    <button type="button" onclick="menuShow()">
+                        <i id="btn_mobile_icon" class="fas fa-grip-lines btn_disabled"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- menu ativo no mobile -->
+            <div class="menu_mobile">
+                <hr>
+                <div>
+                    <ul class="menu_ul">
+                        <li class="">
+                            <a href="#start">
+                                <i class="fas fa-home"></i>
+                                início
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#about">
+                                <i class="fas fa-exclamation-circle">
+                                </i>Sobre
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#jobs">
+                                <i class="fas fa-briefcase"></i>
+                                Trabalhos
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#skills">
+                                <i class="fas fa-fill-drip"></i>
+                                Habilidades
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+                <br>
+                <div class="media_content">
+                    <h3>mídia social</h3>
+                    <br>
+
+                    <ul class="midia_ul1 midia_ul2">
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.linkedin.com/in/marcoscarlos/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.instagram.com/marcos_uidesigner/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.behance.net/marcoscarlluiux">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://dribbble.com/Marcos_Uidesig">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://wa.me/5584981428253">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="start" class="container">
+        <div class="content_start">
+            <div class="text_start">
+                <h2>Olá, Me chamo</h2>
+                <h1>Marcos Carlos</h1>
+                <p>
+                    Sou Product Designer apaixonado por criar soluções <br> que melhorem a qualidade de vida das
+                    pessoas.
+                </p>
+            </div>
+
+            <div class="media_content">
+                <ul id="icon_start" class="midia_ul1 ">
+                    <li>
+                        <a aria-current="page" target="_blank" href="https://www.linkedin.com/in/marcoscarlos/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" target="_blank" href="https://www.instagram.com/marcos_uidesigner/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" target="_blank" href="https://www.behance.net/marcoscarlluiux">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" target="_blank" href="https://dribbble.com/Marcos_Uidesig">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" target="_blank" href="https://wa.me/5584981428253">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="btnScreen_G">
+                <a type="button" class="my_btn1 my_btn2" target="_blank" href="https://wa.me/5584981428253">Contate-me</a>
+            </div>
+        </div>
+
+        <div>
+            <picture>
+                <source srcset="./assets/imgs/web/rosa.png" media="(max-width: 1470px)">
+                <source srcset="./assets/imgs/mobile/secundaria-rosa.png">
+                <img src="./assets/imgs/mobile/secundaria-rosa.png" alt="Marcos Carlos">
+            </picture>
+
+            <div id="btnScreen_L">
+                <a type="button" class="my_btn1" target="_blank" href="https://wa.me/5584981428253">Contate-me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="content_about">
+            <div class="text_about">
+                <h3>Sobre mim</h3>
+                <p>
+                    Me chamo <strong>Marcos Carlos</strong> sou Product Designer apaixonado por criar soluções, sempre
+                    tive uma
+                    paixão
+                    por tecnologia e design, o que me levou a estudar e seguir carreira nesta área.
+                    Aprendi a criar soluções visuais impactantes e eficazes, levando em conta as necessidades do
+                    usuário.
+                </p>
+
+                <div id="btnScreen_G">
+                    <a type="buttom" class="my_btn1 my_btn2" target="_blank" href="https://www.behance.net/marcoscarlluiux">Saiba mais</a>
+                </div>
+            </div>
+
+            <div>
+                <img id="img_second_about" src="./assets/imgs/web/secundária-rosa.png" alt="Marcos Carlos">
+                <div id="btnScreen_L">
+                    <a type="buttom" class="my_btn1 my_btn2" target="_blank" href="https://www.behance.net/marcoscarlluiux">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs" class="container">
+        <div class="content_jobs">
+            <h3>Trabalhos</h3>
+            <p>
+                Durante minha jornada de estudos tive a oportunidade de trabalhar em alguns projetos real que me
+                proporcionou uma experiência incrível como Product Design.
+            </p>
+
+            <div class="img_jobs">
+                <img src="./assets/imgs/Elementos/job-01.svg" alt="primeiro projeto">
+                <img src="./assets/imgs/Elementos/job-02.svg" alt="segundo projeto">
+            </div>
+
+            <p>
+                Todos os projetos estão disponíveis no meu portifólio, acesse para ver todos os projetos
+                completos.
+            </p>
+
+            <div>
+                <a type="buttom" class="my_btn1 my_btn3" target="_blank" href="https://www.behance.net/marcoscarlluiux">Ver projetos</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content_skills">
+            <ul>
+                <li><img src="./assets/icons/notion.png" alt="notion"></li>
+                <li><img src="./assets/icons/figma.png" alt="figma"></li>
+                <li><img src="./assets/icons/html.png" alt="html"></li>
+                <li><img src="./assets/icons/css.png" alt="css"></li>
+                <li><img src="./assets/icons/illustrator.png" alt="ilustator"></li>
+                <li><img src="./assets/icons/adobe-photoshop.png" alt="photoshop"></li>
+                <li><img src="./assets/icons/vscode.png" alt="vscode"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content_call">
+            <div class="text_content">
+                <h3>VAMOS TRABALHAR JUNTOS ?</h3>
+                <p>Tem algum projeto em mente? que tal trabalharmos juntos ;)</p>
+            </div>
+            <div>
+                <a type="buttom" class="my_btn my_btn1 my_btn2" target="_blank" href="https://wa.me/5584981428253">Contate-me</a>
+            </div>
+            <img id="img_call_x" src="./assets/imgs/Elementos/rosa/x.svg" alt="element x">
+            <img id="img_call_square" src="./assets/imgs/Elementos/rosa/square.svg" alt="element square">
+            <img id="img_call_triangle" src="./assets/imgs/Elementos/rosa/triangle.svg" alt="element triangle">
+            <img id="img_call_c" src="./assets/imgs/Elementos/rosa/c.svg" alt="element c">
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="container">
+        <div class="content_contact">
+            <div>
+                <h3>CONTATO</h3>
+                <p>(84) 981428253</p>
+            </div>
+            <div>
+                <div class="media_content">
+                    <h3>mídia social</h3>
+                    <br>
+
+                    <ul class="midia_ul1 midia_ul2">
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.linkedin.com/in/marcoscarlos/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.instagram.com/marcos_uidesigner/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://www.behance.net/marcoscarlluiux">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://dribbble.com/Marcos_Uidesig">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-current="page" target="_blank" href="https://wa.me/5584981428253">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_footer">
+            <h3>PÁGINAS</h3>
+            <ul>
+                <li><a href="#start">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#">Diferencial</a></li>
+                <li><a href="#jobs">Projetos</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
